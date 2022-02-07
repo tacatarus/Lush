@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Каталог товаров</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="nav">
+
+					<div class="nav__logo-body">
+						<div class="nav__logo-img">
+							<a href="index.html"><img data-src="img/icons/logo.svg" alt="logo LushVape"></a>
+						</div>
+						<a href="index.html"><span class="nav__logo-text">Lush Vape</span></a>
+					</div>
+
+					<ul class="nav__list">
+						<li class="nav__list-item"> <a href="catalog.html" class="nav__item-link">Каталог</a> </li>
+						<li class="nav__list-item"> <a data-goto=".blog" href="#" class="nav__item-link">Блог</a> </li>
+						<li class="nav__list-item"> <a href="shipping.html" class="nav__item-link">Доставка</a> </li>
+						<li class="nav__list-item"> <a data-goto=".why-us" href="#" class="nav__item-link">О нас</a> </li>
+						<li class="nav__list-item"> <a data-goto=".footer" href="#" class="nav__item-link">Контакты</a> </li>
+					</ul>
+
+					<div class="nav__telephone">
+						<svg width="20px" height="20px" viewBox="0 0 16 17" fill="#cfcfcf">
+							<g>
+								<g>
+									<path d="M2.938 1.331a.395.395 0 0 1 .225-.064h.032a83.766 83.766 0 0 1 2.042 3.112.763.763 0 0 1-.097.323L4.37 6.105l-.322.565.386.5c.482.688 1.205 1.521 2.17 2.5.986 1.01 1.816 1.747 2.491 2.21l.53.354.531-.322c.29-.15.584-.312.884-.484.3-.172.472-.269.515-.29a.756.756 0 0 1 .321-.097 88.87 88.87 0 0 1 3.119 2.097c.01.032.01.067 0 .104a.382.382 0 0 1-.065.121c-.31.43-.659.844-1.045 1.242-.385.398-.659.63-.82.694-1.939-.108-4.406-1.661-7.402-4.661-2.995-3-4.535-5.468-4.62-7.404.063-.182.289-.467.674-.855a9.896 9.896 0 0 1 1.222-1.048zM3.967.67C3.774.423 3.506.299 3.163.299c-.3 0-.563.08-.788.242-.171.118-.396.285-.675.5-.278.226-.627.564-1.045 1.016-.428.473-.643.855-.643 1.145.086 2.204 1.731 4.92 4.935 8.145 1.608 1.602 3.086 2.817 4.437 3.645 1.35.828 2.577 1.264 3.68 1.307h.033c.29 0 .661-.215 1.117-.645.455-.43.796-.785 1.02-1.065.247-.3.413-.516.499-.645.214-.333.305-.645.273-.935a1.04 1.04 0 0 0-.386-.678 55.938 55.938 0 0 0-3.247-2.161.93.93 0 0 0-.498-.13c-.246 0-.504.076-.771.227-.258.129-.734.397-1.431.806-.622-.452-1.404-1.15-2.347-2.097a24.071 24.071 0 0 1-.522-.54l-.474-.508c-.15-.161-.29-.32-.418-.476-.129-.156-.25-.304-.362-.443a5.507 5.507 0 0 1-.297-.404 66.74 66.74 0 0 0 .771-1.435c.268-.506.3-.93.097-1.274A58.798 58.798 0 0 0 3.967.67z" />
+								</g>
+							</g>
+						</svg>
+						<a href="tel:79815614949" class="tel">+7
+							981-561-49-49</a>
+					</div>
+
+					<div class="nav__icons-row">
+
+						<ul class="nav__icons">
+							<li class="nav__icon"><svg width="20px" height="20px" fill="#cfcfcf" viewBox="0 0 25 23">
+									<g>
+										<g>
+											<path d="M11.819 19.353a1.89 1.89 0 0 0-.958.25c-.291.168-.52.388-.685.661a1.728 1.728 0 0 0-.248.912c0 .502.185.931.555 1.288.37.357.816.536 1.336.536.52 0 .965-.179 1.335-.536.37-.357.555-.786.555-1.288 0-.121-.011-.243-.035-.364a1.583 1.583 0 0 0-.284-.65 1.997 1.997 0 0 0-.839-.673 1.732 1.732 0 0 0-.354-.102 2.121 2.121 0 0 0-.378-.034zm6.806 0c-.52 0-.965.178-1.335.535-.37.357-.555.787-.555 1.288 0 .502.185.931.555 1.288.37.357.815.536 1.335.536s.965-.179 1.336-.536c.37-.357.555-.786.555-1.288 0-.501-.185-.93-.555-1.288a1.855 1.855 0 0 0-1.336-.535zm1.49-2.918h-9.1l-2.41-8.8h14.558zm4.738-9.95a.709.709 0 0 0-.603-.308H8.203l-1.23-4.035a3.077 3.077 0 0 0-.448-.935c-.19-.258-.39-.44-.603-.547a2.695 2.695 0 0 0-.555-.217 2.01 2.01 0 0 0-.473-.057H1.656a.72.72 0 0 0-.52.206.697.697 0 0 0-.213.524c0 .121.032.24.095.353a.635.635 0 0 0 .272.262c.118.061.24.092.366.092h3.238c.063 0 .122.007.177.022.055.016.13.08.225.194.094.114.173.285.236.513l4.183 14.817a.82.82 0 0 0 .402.456.698.698 0 0 0 .307.069h10.21a.761.761 0 0 0 .437-.137.678.678 0 0 0 .272-.342L24.96 7.157a.71.71 0 0 0-.106-.673z" />
+										</g>
+									</g>
+								</svg></li>
+
+							<li class="nav__icon"><svg data-popup="#popup" width="20px" height="20px" fill="#cfcfcf" viewBox="0 0 24 24">
+									<g>
+										<g>
+											<path d="M12.012 0c.798 0 1.61.156 2.44.47.829.312 1.556.719 2.182 1.22a6.85 6.85 0 0 1 1.536 1.7c.399.633.598 1.255.598 1.865V9.01c0 1.095-.23 2.291-.692 3.59-.461 1.297-1.16 2.314-2.1 3.05l6.546 3.12.14.046c.11.047.235.118.376.211.141.094.286.2.434.317.149.117.274.258.376.422a.912.912 0 0 1 .152.481v2.276c0 .407-.145.755-.434 1.044-.29.29-.637.434-1.044.434H1.502a1.45 1.45 0 0 1-1.068-.434A1.423 1.423 0 0 1 0 22.522v-2.276c0-.14.055-.293.164-.457.11-.164.231-.301.364-.41.133-.11.285-.22.457-.33.173-.109.29-.179.352-.21.063-.032.118-.055.165-.07l6.592-3.12c-.938-.767-1.646-1.811-2.123-3.133-.477-1.321-.716-2.49-.716-3.507V5.255c0-.813.329-1.63.986-2.451C6.897 1.982 7.754 1.31 8.81.786 9.865.262 10.933 0 12.012 0zm0 1.501c-.813 0-1.635.204-2.464.61-.828.407-1.501.904-2.017 1.49-.516.587-.774 1.138-.774 1.654V9.01c0 .86.2 1.841.598 2.944.399 1.103.958 1.943 1.677 2.522.438.344.622.794.552 1.349-.07.555-.356.95-.857 1.185l-6.592 3.12c-.422.188-.633.477-.633.868v1.525l20.997-.023v-1.455l-.024-.305-.082-.235-.117-.152-.13-.106-.117-.07-.093-.035-.047-.012-6.546-3.097c-.5-.234-.79-.633-.868-1.196a1.555 1.555 0 0 1 .235-.974c.094-.148.203-.277.328-.387.735-.563 1.29-1.392 1.666-2.487.375-1.095.563-2.088.563-2.98V5.256c0-.39-.156-.81-.47-1.255a5.51 5.51 0 0 0-1.196-1.22 6.642 6.642 0 0 0-1.7-.915 5.383 5.383 0 0 0-1.89-.364z" />
+										</g>
+									</g>
+								</svg></li>
+
+						</ul>
+
+						<div class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+
+					</div>
+
+
+				</nav>
+			</div>
+		</header>
+
+
+
+		<main class="page">
+
+			<!-- ================================Items catalog========================================== -->
+
+			<div class="more__items">
+				<div class="more__items-container __container">
+
+					<div class="more__items-vape">
+
+						<div class="big__slider swiper">
+							<div class="big__slider-wrapper swiper-wrapper">
+
+								<div class="big__slider-slide swiper-slide">
+									<div class="big__slider-items">
+										<img data-src="img/items/detail01.png" alt="item1">
+									</div>
+								</div>
+
+								<div class="big__slider-slide swiper-slide">
+									<div class="big__slider-items">
+										<img data-src="img/items/detail02.png" alt="item1">
+									</div>
+								</div>
+
+								<div class="big__slider-slide swiper-slide">
+									<div class="big__slider-items">
+										<img data-src="img/items/detail03.png" alt="item1">
+									</div>
+								</div>
+
+								<div class="big__slider-slide swiper-slide">
+									<div class="big__slider-items">
+										<img data-src="img/items/detail04.png" alt="item1">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+
+						<div class="small__slider swiper">
+							<div class="small__slider-wrapper swiper-wrapper">
+
+								<div class="small__slider-slide swiper-slide">
+									<div class="small-slider__items">
+										<img data-src="img/items/detail01.png" alt="item1">
+									</div>
+								</div>
+
+								<div class="small__slider-slide swiper-slide">
+									<div class="small-slider__items">
+										<img data-src="img/items/detail02.png" alt="item1">
+									</div>
+								</div>
+
+								<div class="small__slider-slide swiper-slide">
+									<div class="small-slider__items">
+										<img data-src="img/items/detail03.png" alt="item1">
+									</div>
+								</div>
+
+								<div class="small__slider-slide swiper-slide">
+									<div class="small-slider__items">
+										<img data-src="img/items/detail04.png" alt="item1">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="more__items-main">
+						<div class="more__items-content">
+
+							<div class="more__items-info info">
+								<a href="#feed" class="info__feed-link">Отзывы</a>
+								<a href="#" class="info__item-name">VooPoo Drag 2 Kit</a>
+								<p class="info__old-price"> <s> 3000 ₽</s> </p>
+								<p class="info__new-price">5 990 ₽</p>
+							</div>
+
+
+							<div class="more__items-features features">
+								<ul class="features__list">
+									<li class="features__item">
+										<span>Емкость аккумулятора</span>
+										<span>3000</span>
+									</li>
+									<li class="features__item">
+										<span>Аккумулятор</span>
+										<span>Встроенный</span>
+									</li>
+									<li class="features__item">
+										<span>Аутентичность</span>
+										<span>Оригинал</span>
+									</li>
+									<li class="features__item">
+										<span>Страна</span>
+										<span>Китай</span>
+									</li>
+									<li class="features__item">
+										<span>Производитель</span>
+										<span>Eleaf</span>
+									</li>
+
+								</ul>
+							</div>
+
+							<div class="more__items-mod mod">
+								<p class="mod__title">Модификации</p>
+								<div class="mod__color">
+									<span class="color">Цвет:</span> <span class="orange"></span>
+									<span class="blue"></span><span class="green"></span>
+								</div>
+							</div>
+
+							<div class="more__items-cart">
+								<div class="more__items-cart-counter">
+									<div id="button__wrapper">
+										<button id="decr-btn">-</button>
+										<h1 id="counter">0</h1>
+										<button id="incr-btn">+</button>
+									</div>
+								</div>
+								<button class="buy__cart-button more__btn">В корзину</button>
+								<a href="#" class="buy__link">Купить в один клик</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- ====================================Item description section============================== -->
+
+			<div class="item__description">
+				<div class="item__description-container __container">
+					<div class="item__description-title title">Описание</div>
+					<div class="item__description-text">
+						<p>Набор eVic VT объединяет в себе сразу несколько новейших разработок от
+							компании Joyetech и представляет собой полностью готовое к работе устройство, ориентированное, в первую очередь,
+							на опытных парильщиков. Перечислять его достоинства можно очень долго, но об одной опции стоит сказать отдельно:
+							помимо привычной уже регулировки мощности модель оснащена системой регулировки температуры!</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- =======================Characteristic section========================================= -->
+
+			<div class="add__features">
+				<div class="add__features-container __container">
+
+					<ul class="features__list">
+						<li class="features__item">
+							<span>Емкость аккумулятора</span>
+							<span>3000</span>
+						</li>
+						<li class="features__item">
+							<span>Аккумулятор</span>
+							<span>Встроенный</span>
+						</li>
+						<li class="features__item">
+							<span>Аутентичность</span>
+							<span>Оригинал</span>
+						</li>
+						<li class="features__item">
+							<span>Страна</span>
+							<span>Китай</span>
+						</li>
+						<li class="features__item">
+							<span>Производитель</span>
+							<span>Eleaf</span>
+						</li>
+
+					</ul>
+
+					<ul class="features__list">
+						<li class="features__item">
+							<span> Сопротивление</span>
+							<span> 0.2 Ом</span>
+						</li>
+						<li class="features__item">
+							<span>Регулировка мощности</span>
+							<span>Нет</span>
+						</li>
+						<li class="features__item">
+							<span>Тип затяжки</span>
+							<span>Встроенный</span>
+						</li>
+						<li class="features__item">
+							<span>Диаметр атомайзера</span>
+							<span>25 мм</span>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<!-- ============================Feedback section========================================== -->
+
+			<div class="feedback" id="feed">
+				<div class="feedback__container">
+					<div class="feedback__title title">
+						Отзывы
+					</div>
+					<div class="feedback__slider swiper">
+						<div class="feedback__slider-wrapper swiper-wrapper">
+
+							<div class="feedback__slider-slide swiper-slide">
+								<div class="feedback__slide">
+									<div class="feedback__img"><img data-src="img/feed1.jpg" alt="man"> </div>
+									<div class="feedback__name">Валерий Милонин</div>
+									<div class="feedback__opinion">Понравилось то, что можно оставить 1 батарею он будет компактнее. По каким-то
+										причинам тек бак.</div>
+									<div class="feedback__icons">
+										<div class="feedback-icons"> <img src="img/icons/instagray.svg" alt="instagram"></div>
+										<div class="feedback-icons"> <img src="img/icons/vkgray.svg" alt="icon"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="feedback__slider-slide swiper-slide">
+								<div class="feedback__slide">
+									<div class="feedback__img"><img data-src="img/feed2.jpg" alt="man"> </div>
+									<div class="feedback__name">Илья Кротиков</div>
+									<div class="feedback__opinion">Парю пару месяцев, перепробовал около 6 производителей, и лучше этого пока не
+										встретил. Спасибо девушке из Тверского магазина за очень хороший совет!</div>
+									<div class="feedback__icons">
+										<div class="feedback-icons"> <img src="img/icons/instagray.svg" alt="icon"></div>
+										<div class="feedback-icons"> <img src="img/icons/telegramgray.svg" alt="icon"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="feedback__slider-slide swiper-slide">
+								<div class="feedback__slide">
+									<div class="feedback__img"><img data-src="img/feed3.jpg" alt="man"> </div>
+									<div class="feedback__name">Игорь Груздев</div>
+									<div class="feedback__opinion"> Рекомендую, сладость есть медок есть и табак тоже есть но в помещении остается
+										запах не очень, лично для меня.</div>
+									<div class="feedback__icons">
+										<div class="feedback-icons"> <img src="img/icons/vkgray.svg" alt="icon"></div>
+										<div class="feedback-icons"> <img src="img/icons/instagray.svg" alt="icon"></div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="feedback__slider-slide swiper-slide">
+								<div class="feedback__slide">
+									<div class="feedback__img"><img data-src="img/feed3.jpg" alt="man"> </div>
+									<div class="feedback__name">Игорь Груздев</div>
+									<div class="feedback__opinion"> Рекомендую, сладость есть, медок есть, и табак тоже есть, но в помещении остается запах не очень, лично для меня.</div>
+									<div class="feedback__icons">
+										<div class="feedback-icons"> <img src="img/icons/vkgray.svg" alt="icon"></div>
+										<div class="feedback-icons"> <img src="img/icons/instagray.svg" alt="icon"></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="swiper-scrollbar"></div>
+
+					</div>
+				</div>
+			</div>
+
+			<!--======================Also buy section================================================== -->
+
+			<div class="also__buy">
+				<div class="also__buy-container __container">
+
+					<div class="also__buy-title title">
+						С этим товаром покупают
+					</div>
+
+					<div class="also__buy-slider swiper">
+						<div class="also__buy-wrapper swiper-wrapper">
+
+							<div class="also__buy-slide swiper-slide">
+								<div class="also__buy-img"><img data-src="img/items/item1.png" alt="item1"></div>
+								<a href="#" class="also__buy-title">Fresh Fruits</a>
+								<div class="also__buy-price">650₽</div>
+							</div>
+
+							<div class="also__buy-slide swiper-slide">
+								<div class="slide__img"><img data-src="img/items/item2.png" alt="item1"> </div>
+								<a href="#" class="also__buy-title">Nos Mini S Pod</a>
+								<div class="also__buy-price">650₽</div>
+							</div>
+
+							<div class="also__buy-slide swiper-slide">
+								<div class="slide__img"><img data-src="img/items/item3.png" alt="item1"> </div>
+								<a href="#" class="also__buy-title">VooPoo Drag 2</a>
+								<div class="also__buy-price">650₽</div>
+							</div>
+
+							<div class="also__buy-slide swiper-slide">
+								<div class="slide__img"><img data-src="img/items/item4.png" alt="item1"> </div>
+								<a href="#" class="also__buy-title">Im Vape Warrior</a>
+								<div class="also__buy-price">650₽</div>
+							</div>
+
+							<div class="also__buy-slide swiper-slide">
+								<div class="slide__img"><img data-src="img/items/item5.png" alt="item1"> </div>
+								<a href="#" class="also__buy-title">G-Priv TC</a>
+								<div class="also__buy-price">650₽</div>
+							</div>
+
+							<div class="also__buy-slide swiper-slide">
+								<div class="slide__img"><img data-src="img/items/item3.png" alt="item1"> </div>
+								<a href="#" class="also__buy-title">Prax 90 TC</a>
+								<div class="also__buy-price">780₽</div>
+							</div>
+
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-pagination"></div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</main>
+		<!-- ============================Location section ============================================ -->
+
+		<div class="location" id="location">
+			<div class="location__container __container">
+				<div class="location__title">Наши магазины</div>
+				<div class="location__row">
+					<div class="row__map">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A074d439ae24bba0962f3e0ee14a43c6fae963cf0fc7a9d5480d4b59bb93afe89&amp;source=constructor" width="100%" height="255" frameborder="0" class="map"></iframe>
+					</div>
+
+					<div class="row__cards">
+
+						<div class="shops__card">
+							<div class="card__title">Люблино Lush-Vape</div>
+							<div class="card__city">г. Москва, ул. Люблино, 12 </div>
+							<div class="card__street"> Сквер Имени Судакова</div>
+							<div class="card__working-hours">Пн-Вс 8:00-01:00</div>
+							<a href="tel:78785415265" class="card__telephone">+7 (878) 541-52-65 </a>
+							<span class="span-1"> <span class="span-2"> <span class="span-3"> </span></span< /span> </span>
+						</div>
+
+						<div class="shops__card">
+							<div class="card__title">Даниловский Lush-Vape</div>
+							<div class="card__city">г. Москва, ул. Серпуховский Вал, 5</div>
+							<div class="card__street"> Тульская</div>
+							<div class="card__working-hours">Пн-Вс 8:00-00:00</div>
+							<a href="tel:78785415265" class="card__telephone">+7 (878) 541-53-67 </a>
+							<span class="span-1"> <span class="span-2"> <span class="span-3"> </span></span< /span> </span>
+						</div>
+
+						<div class="shops__card">
+							<div class="card__title">Хамовники Lush-Vape</div>
+							<div class="card__city">г. Москва, Фрунзенская наб., 30</div>
+							<div class="card__street"> Фрунзенская </div>
+							<div class="card__working-hours">Пн-Вс 10:00-22:00</div>
+							<a href="tel:78785415265" class="card__telephone">+7 (878) 540-52-66 </a>
+							<span class="span-1"> <span class="span-2"> <span class="span-3"> </span></span< /span> </span>
+						</div>
+
+						<div class="shops__card">
+							<div class="card__title">Тверской Lush-Vape</div>
+							<div class="card__city">г. Москва, Васильевская ул., 7</div>
+							<div class="card__street"> Баррикадная</div>
+							<div class="card__working-hours">Пн-Вс 8:00-01:00</div>
+							<a href="tel:78785415265" class="card__telephone">+7 (878) 541-52-65 </a>
+							<span class="span-1"> <span class="span-2"> <span class="span-3"> </span></span< /span> </span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="footer" id="footer">
+
+			<div class="footer__container footer__grid">
+
+				<div data-spollers="992,max" class="spollers">
+					<div class="spollers__item footer__item">
+						<button type="button" data-spoller class="spollers__title">Помощь покупателю</button>
+						<div class="spollers__body">
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Как зарегистрироваться</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Как сделать заказ</a></li>
+								<li class="footer__list-item"><a href="shipping.html" class="footer__list-link">Оплата</a></li>
+								<li class="footer__list-item"><a href="shipping.html" class="footer__list-link">Доставка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div data-spollers="992,max" class="spollers">
+					<div class="spollers__item footer__item">
+						<button type="button" data-spoller class="spollers__title">Аксессуары</button>
+						<div class="spollers__body">
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Зарядные устройства</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Аккумуляторы</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Наклейки</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Чехлы</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div data-spollers="992,max" class="spollers">
+					<div class="spollers__item footer__item">
+						<button type="button" data-spoller class="spollers__title">Жидкость для вейпов</button>
+						<div class="spollers__body">
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Жидкости для POD-систем</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Наборы vape жидкостей</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Никотиновые бустеры</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div data-spollers="992,max" class="spollers">
+					<div class="spollers__item footer__item">
+						<button type="button" data-spoller class="spollers__title">POD-системы</button>
+						<div class="spollers__body">
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Сменные картриджи</a></li>
+								<li class="footer__list-item"><a href="#" class="footer__list-link">Аксессуары</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__contacts">
+					<div class="nav__logo-body">
+						<div class="nav__logo-img">
+							<a href="index.html"><img data-src="img/icons/logo.svg" alt="logo LushVape"></a>
+						</div>
+						<a href="index.html"><span class="nav__logo-text">Lush Vape</span></a>
+					</div>
+					<div class="footer__contacts-text">Все права зашищены©</div>
+					<div class="footer__contacts-telephone">
+						<a href="tel:79815614949" class="footer__tel">+7 981 561-49-49</a>
+						<span>Пн-Пт</span>
+					</div>
+					<a href="mailto:infovape@gmail.com" class="footer__email">infovape@gmail.com</a>
+				</div>
+
+			</div>
+
+		</footer>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__body">
+					<h2 class="popup__title">Логин</h2>
+					<form action="#">
+						<div class="popup__data">
+							<input type="text" maxlength="150" placeholder="Имя пользователя" required>
+							<input type="password" placeholder="Пароль" required>
+							<button type="submit">Войти</button>
+						</div>
+						<div class="popup__bottom">
+							<a data-goto=".footer" href="#">Нет аккауната?</a>
+							<a href="#">Не помню пароль</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
